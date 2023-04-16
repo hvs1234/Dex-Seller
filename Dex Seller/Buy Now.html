@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Now 🛍️</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<style>
+    body::before{background:url('phone.gif') no-repeat center center/cover;position:fixed;width:120%;height:150%;top:-100px;opacity:0.5;filter:saturate(20);left:0px;filter:blur(15px);z-index:-1;content:"";}
+    #name{position:relative;display:flex;left:400px;top:100px;padding-top:100px;font-family:sans-serif;font-weight:bold;font-size:1.5em;color:rgb(2, 2, 63);letter-spacing:2px;}
+    #email{position:relative;display:flex;left:400px;top:110px;padding-top:100px;font-family:sans-serif;font-weight:bold;font-size:1.5em;color:rgb(2, 2, 63);letter-spacing:2px;}
+    #message{position:relative;font-family:sans-serif;font-weight:bold;font-size:1.5em;
+    color:rgb(2, 2, 63);left:400px;}
+    #input1{position:relative;display:flex;margin-top:140px;left:700px;bottom:220px;width:200%;padding:5px 30px;font-size:1.5em;border-radius:20px;border:3px solid black;
+    color:rgb(1, 39, 1);font-weight:bold;}
+    #input2{position:relative;display:flex;left:700px;bottom:130px;width:200%;padding-left:20px;
+    font-size:1.5em;border-radius:20px;padding:5px 30px;border:3px solid black;
+    color:rgb(1, 39, 1);font-weight:bold;}
+    #message-text{padding-left:20px;padding-top:20px;position:relative;left:700px;bottom:60px;
+    width:200%;border-radius:20px;border:3px solid black;font-size:1.5em;color:rgb(1, 39, 1);
+    font-weight:bold;}
+    .btn{position:relative;left:700px;top:40px;border:3px solid black;padding:10px 10px;width:200%;border-radius:20px;background-color:lightgreen;font-size:1.5em;font-weight:bold;}
+    .btn:hover{background-color:aquamarine;color:darkblue;}
+    .footer{background-color:black;color:white;display:flex;justify-content:center;padding:10px 0px;font-size:1.5em;font-family:monospace;position:relative;top:200px;}
+</style>
+
+<body>
+    <header>
+        <nav>
+            <img class="border-s-black rounded-full bg-slate-400 w-16 absolute left-10 top-4" src="person.png" alt="Error Loading Image">
+            <ul class="flex justify-end space-x-10 bg-purple-800 text-white font-mono-bold 
+            px-10 py-1 mx-0 my-0">
+                <li class="px-5 py-2 mx-5 my-5 relative right-10 hover:text-teal-300 cursor-pointer" style="font-size: 1.3em; font-weight: bold;">
+                <a href="Home.html">Home</a></li>
+                <li class="px-5 py-2 mx-5 my-5 relative right-10 hover:text-teal-300 cursor-pointer" style="font-size: 1.3em; font-weight: bold;">
+                <a href="About Us.html">About Us</a></li>
+                <li class="px-5 py-2 mx-5 my-5 relative right-10 hover:text-teal-300 cursor-pointer" style="font-size: 1.3em; font-weight: bold;"><a href="Services.html">Services</a></li>
+                <li class="px-5 py-2 mx-5 my-5 relative right-10 hover:text-teal-300 cursor-pointer" style="font-size: 1.3em; font-weight: bold;"><a href="Contact Us.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <header>
+        <form class="w-96" action="https://formsubmit.co/3469harshsharma@gmail.com" 
+        method="POST" target="_blank">
+            <div>
+                <label for="name" id="name">Your Name:</label>
+                <label for="email" id="email">Your Email:</label>
+                <input id="input1" type="text" placeholder="Enter your name" required>
+                <input id="input2" type="email" placeholder="Enter your email" required>
+            </div>
+            <div>
+                <label for="message" id="message">Your Order:</label>
+                <textarea name="message" id="message-text" cols="30" rows="10" placeholder="Enter your message here"></textarea>
+            </div>
+            <div>
+                <button class="btn">Order Now</button>
+            </div>
+        </form>
+    </header>
+
+    <footer class="footer">
+        <marquee behavior="scroll" scrollamount="20" direction="right">
+            <h1>©️ @ Copyright Ltd ©️</h1>
+        </marquee>
+    </footer>
+</body>
+</html>
